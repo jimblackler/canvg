@@ -158,7 +158,7 @@ export class SVGElement extends RenderedElement {
   ) {
     const widthAttr = this.getAttribute('width', true)
     const heightAttr = this.getAttribute('height', true)
-    const viewBoxAttr = this.getAttribute('viewBox')
+    const viewBoxAttr = this.getAttribute('viewBox', true)
     const styleAttr = this.getAttribute('style')
     const originWidth = widthAttr.getNumber(0)
     const originHeight = heightAttr.getNumber(0)
